@@ -1,0 +1,14 @@
+<div 
+    *ngIf="icon$ | async as icon"
+    class="square"
+    [ngClass]="{
+        'border-top' : data.border.topBorder,
+        'border-left' : data.border.leftBorder,
+        'border-bottom' : data.border.bottomBorder,
+        'border-right' : data.border.rightBorder
+    }"
+    (click)="selectSquare(icon)"
+>
+    <img *ngIf="data.value === 'x'" class="cross" src="./../../assets/close.jpg" alt="cross image">
+    <img *ngIf="data.value === 'o'" class="circle" src="./../../assets/circle.png" alt="circle image">
+</div>
