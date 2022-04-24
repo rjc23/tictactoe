@@ -12,7 +12,6 @@ export class SquareComponent {
 
   @Input() data!: Square;
   icon$!: Observable<string>;
-  watermark = false;
 
   constructor(private state: StateService) { 
     this.icon$ = this.state.getNextIcon();
