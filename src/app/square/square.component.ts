@@ -23,13 +23,4 @@ export class SquareComponent {
       this.state.updateSquare(this.data.key, icon);
     }
   }
-
-  showWatermark() {
-    this.watermark = true;
-    console.log("there")
-  }
-
-  myFunc() {
-    console.log("herererer")
-  }
 }
